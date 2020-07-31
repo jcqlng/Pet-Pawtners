@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- Google Font Thin  -->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet'>
+    <!-- Google Font Bold  -->
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <!-- Boostrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Hamburger Menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../assets/style.css">
+
+
+    <title>Pet PAWtners</title>
+</head>
+
+
+<body>
+    <!-- Hamburger Mobile Navigation Menu -->
+    <div class="topnav">
+
+        <a href="/">Home</a>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a onclick="myFunction()" href="#about">About</a>
+            <a onclick="myFunction()" href="#pack">Meet the Pack</a>
+            <a onclick="myFunction()" href="#testimonials">PAWS-Timonials</a>
+            <a onclick="myFunction()" href="#contact">Bark at Us</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+
+    <!-- Hero Image and Nav Bar  -->
+    <div class="hero-image">
+        <header id="masthead">
+            <div class="nav-container">
+                <a href="/" id="logo">Home</a>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#pack">Meet the Pack</a>
+                    <a href="#testimonials">PAWsitive Reviews</a>
+                    <a href="#contact">Bark at Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Text  -->
+        <div class="container-intro">
+            <div class="hero-text">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Welcome to</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Pet PAWtners </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 intro">
+                        <h2>Join our
+                            network of dog-lovers that connects pet owners and sitters in your community.</h2>
+                    </div>
+                </div>
+                <div class="intro-buttons">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="/owner" target="_blank" class="btn">I'm a Pet
+                                Owner</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/petsitter" target="_blank" class="btn">I'm a Pet
+                                Sitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section  -->
+    <a id="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/paw-print.png" class="paw" alt="paw-print">
+                    </div>
+                    <div class="row">
+                        <h4> Register </h4>
+                    </div>
+                    <div class="row">
+                        <p>Choose above whether you are a pet sitter or pet owner and you'll be direted to a quick &
+                            easy registration form.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/paw-print.png" class="paw" alt="paw-print">
+                    </div>
+                    <div class="row">
+                        <h4> Match </h4>
+                    </div>
+                    <div class="row">
+                        <p>Based on your needs, we'll match you with a few local options and you can choose who looks
+                            best for you or your pup.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/paw-print.png" class="paw" alt="paw-print">
+                    </div>
+                    <div class="row">
+                        <h4> Connect </h4>
+                    </div>
+                    <div class="row">
+                        <p>Once you find your match, we'll give you the ball! Connect with your match and start
+                            coordinating the pet stay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="about-data">
+            <div class="col-md-6">
+                <h5>What You Can Expect</h5>
+                <p id=about-text>It’s important to remember that our team of professionals are dog-obsessed. Therefore,
+                    our priority is to make sure your pup has the best experience possible.
+                    <br>
+                    We take into account your best friend's temperment, size, and more in order to connect you with the
+                    best possible match.
+                    <br>
+                    Whether you need a quick over-night sleepover, or a long-term pet-cation, we have someone in our
+                    network for you.
+                    <br>
+                    Gone are the days of lonely kennels. Welcome to the future of pet-sitting!</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../assets/images/about-dog2.jpeg" class="about" alt="paw-print">
+            </div>
+        </div>
+    </a>
+
+    <!-- Team Section  -->
+    <a id="pack">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Meet the Pack</h4>
+            </div>
+        </div>
+        <div class="container-pack">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/diana-dog.jpg" class="pack" alt="Diana">
+                    </div>
+                    <div class="row" id="team-text">
+                        <h2>Diana</h2>
+                    </div>
+                    <div class="row" id="team-text">
+                        <p>CEO</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/jackie-dog.jpg" class="pack" alt="Jackie">
+                    </div>
+                    <div class="row" id="team-text">
+                        <h2>Jackie</h2>
+                    </div>
+                    <div class="row" id="team-text">
+                        <p>Communications Manager</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/dana-dog.JPG" class="pack" alt="Dana">
+                    </div>
+                    <div class="row" id="team-text">
+                        <h2>Dana</h2>
+                    </div>
+                    <div class="row" id="team-text">
+                        <p>Marketing Director</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2  -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/anthony-dog.jpg" class="pack" alt="Anthony">
+                    </div>
+                    <div class="row" id="team-text">
+                        <h2>Anthony</h2>
+                    </div>
+                    <div class="row" id="team-text">
+                        <p>COO</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/mascott.jpg" class="pack" alt="Jackie">
+                    </div>
+                    <div class="row" id="team-text">
+                        <h2>Turk</h2>
+                    </div>
+                    <div class="row" id="team-text">
+                        <p>Team Mascot</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="../assets/images/andy-dog.jpg" class="pack" alt="Andy">
+                    </div>
+                    <div class="row" id="team-text">
+                        <h2>Andy</h2>
+                    </div>
+                    <div class="row" id="team-text">
+                        <p>Sales Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <!-- Testimonials  -->
+    <a id="testimonials">
+        <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+                <q>Pet PAWtners was so easy to use! I connected with people right in my neighborhood, so Lilly felt
+                    at home even while we were away.</q>
+                <p class="author">- John Murph, Pet Owner</p>
+            </div>
+
+            <div class="mySlides">
+                <q>My pooch went to puppy heaven a few years ago and we haven't been ready to fully adopt another dog.
+                    We love Pet PAWtners because it allows to ease back into having a dog and share all the puppy love
+                    we have!</q>
+                <p class="author">- Jane Karen, Pet Sitter</p>
+            </div>
+
+            <div class="mySlides">
+                <q>I travel a lot for work. Pet PAWtners is my go-to source when I need someone to watch Tank on short
+                    notice.</q>
+                <p class="author">- Thomas Wexler</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </a>
+
+    <!-- Contact  -->
+    <a id="contact">
+        <div class="container-contact">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Bark at Us</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-cube">
+                        <img src="../assets/images/bone.png" id="contact-image">
+
+                        <h2>Phone</h2>
+                        <a href=”6316727576”>
+                            <h6 id="hyperlink">123-555-8598</h6>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-cube">
+                        <img src="../assets/images/bone.png" id="contact-image">
+                        <h2>Email</h2>
+                        <a href="mailto:info@gmail.com">
+                            <h6 id="hyperlink">Info@PetPawtners.com</h6>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 justify-content-around">
+                    <div class="contact-cube">
+                        <img src="../assets/images/bone.png" id="contact-image">
+                        <h2>Location</h2>
+                        <a href="https://www.google.com/maps/place/Channelside+Dr,+Tampa,+FL/@27.9494375,-82.4478428,17z/data=!3m1!4b1!4m5!3m4!1s0x88c2c4f511cdbedd:0xecc7c08c1db6bf35!8m2!3d27.9494375!4d-82.4456541"
+                            target="_blank">
+                            <h6 id="hyperlink">Tampa, Florida</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </a>
+
+    <!-- Footer  -->
+    <footer>
+        <p>Copyright @Pet PAWtners 2020</p>
+        </div>
+    </footer>
+
+    <!-- Jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../assets/javaScript.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <!-- Google Font Thin  -->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet'>
+    <!-- Google Font Bold  -->
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <!-- Boostrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Toast  -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <!-- Hamburger Menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Pet PAWtners</title>
+</head>
+
+
+<body>
+    <!-- Hamburger Mobile Navigation Menu -->
+    <div class="topnav">
+
+        <a href="/" id="logo" class="active">Home</a>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a onclick="myFunction()" href="https://pet-pawtners.herokuapp.com/#about">About</a>
+            <a onclick="myFunction()" href="https://pet-pawtners.herokuapp.com/#pack">Meet the Pack</a>
+            <a onclick="myFunction()" href="https://pet-pawtners.herokuapp.com/#testimonials">PAWS-Timonials</a>
+            <a onclick="myFunction()" href="https://pet-pawtners.herokuapp.com/#contact">Bark at Us</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+
+    <!-- Hero Image and Nav Bar  -->
+    <div class="hero-image-survey">
+
+        <header id="masthead">
+            <div class="nav-container">
+                <a href="/" id="logo">Home</a>
+                <nav>
+                    <a href="https://pet-pawtners.herokuapp.com/#about">About</a>
+                    <a href="https://pet-pawtners.herokuapp.com/#pack">Meet the Pack</a>
+                    <a href="https://pet-pawtners.herokuapp.com/#testimonials">PAWsitive Reviews</a>
+                    <a href="https://pet-pawtners.herokuapp.com/#contact">Bark at Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Text  -->
+        <div class="container-intro">
+            <div class="hero-text">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Start Below</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Pet Owner Questions</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Tell us more about your pet by completing the form. <br>We'll use this info to connect your
+                            pup
+                            with the perfect sitter!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- </div>
+    </div> -->
+    </a>
+
+    <!-- Survey Questions  -->
+    <div class="container survey">
+        <img src="../assets/images/horizontal-prints.png" id="paw-prints" alt="paw-print">
+
+        <div class="survey-box">
+            <h3>Name (Required):</h3>
+            <input type="text" id="name" class="form-control" required>
+
+            <h3>Link to a Photo Image of your Dog (Required):</h3>
+            <input type="text" id="photo" class="form-control" required>
+
+            <!-- Question 1 -->
+            <h3>City:</h3>
+            <input type="text" id="city" class="form-control" name="city">
+
+            <!-- Question 2 -->
+            <h3>State:</h3>
+            <select class="chosen-select form-control" id="state">
+                <option value=""> Select </option>
+                <option value="AL"> AL </option>
+                <option value="AK"> AK </option>
+                <option value="AS"> AS </option>
+                <option value="AZ"> AZ </option>
+                <option value="AR"> AR </option>
+                <option value="CA"> CA </option>
+                <option value="CO"> CO </option>
+                <option value="CT"> CT </option>
+                <option value="DE"> DE </option>
+                <option value="DC"> DC </option>
+                <option value="FL"> FL </option>
+                <option value="GA"> GA </option>
+                <option value="GU"> GU </option>
+                <option value="HI"> HI </option>
+                <option value="ID"> ID </option>
+                <option value="IL"> IL </option>
+                <option value="IN"> IN </option>
+                <option value="IA"> IA </option>
+                <option value="KS"> KS </option>
+                <option value="KY"> KY </option>
+                <option value="LA"> LA </option>
+                <option value="ME"> ME </option>
+                <option value="MD"> MD </option>
+                <option value="MA"> MA </option>
+                <option value="MI"> MI </option>
+                <option value="MN"> MN </option>
+                <option value="MS"> MS </option>
+                <option value="MO"> MO </option>
+                <option value="MT"> MT </option>
+                <option value="NE"> NE </option>
+                <option value="NV"> NV </option>
+                <option value="NH"> NH </option>
+                <option value="NJ"> NJ </option>
+                <option value="NM"> NM </option>
+                <option value="NY"> NY </option>
+                <option value="NC"> NC </option>
+                <option value="ND"> ND </option>
+                <option value="MP"> MP </option>
+                <option value="OH"> OH </option>
+                <option value="OK"> OK </option>
+                <option value="OR"> OR </option>
+                <option value="PA"> PA </option>
+                <option value="PR"> PR </option>
+                <option value="RI"> RI </option>
+                <option value="SC"> SC </option>
+                <option value="SD"> SD </option>
+                <option value="TN"> TN </option>
+                <option value="TX"> TX </option>
+                <option value="UT"> UT </option>
+                <option value="VT"> VT </option>
+                <option value="VA"> VA </option>
+                <option value="VI"> VI </option>
+                <option value="WA"> WA </option>
+                <option value="WV"> WV</option>
+                <option value="	WI	"> WI </option>
+                <option value="	WY	"> WY </option>
+            </select>
+
+            <!-- Question 3 -->
+            <h3>Email:</h3>
+            <input type="email" id="email" name="email" class="form-control">
+
+            <!-- Question 4 -->
+            <h3>How long will you need a sitter?</h3>
+            <select class="chosen-select form-control" id="q4">
+                <option value="">Select</option>
+                <option value="1">1 Day</option>
+                <option value="2">1-5 Days</option>
+                <option value="3">More than 5 Days</option>
+            </select>
+
+            <!-- Question 5 -->
+            <h3>How Many Dogs?</h3>
+            <select class="chosen-select form-control" id="q5">
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <!-- Question 6 -->
+            <h3>What is your dog's size?</h3>
+            <select class="chosen-select form-control" id="q6">
+                <option value="">Select</option>
+                <option value="1">Small (Under 20 lbs)</option>
+                <option value="2">Medium (Under 50 lbs)</option>
+                <option value="3">Large (over 50lbs)
+                </option>
+            </select>
+
+            <!-- Question 7 -->
+            <h3>What kind of temperament does your dog have?</h3>
+            <select class="chosen-select form-control" id="q7">
+                <option value="">Select</option>
+                <option value="1">Playful & Active</option>
+                <option value="2">Calm & Lazy</option>
+                <option value="3">Timid & Shy</option>
+            </select>
+            <br>
+            <br>
+            <!-- Submit Button -->
+            <button type="submit" class="btn" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" id="modal-title"><strong> Your Matches</strong></h2>
+                </div>
+                <div class="modal-about">
+                    <p>Congrats! We found the perfect sitter options for your pooch! Use the email address
+                        provided below to
+                        contact your favorite
+                        match.</p>
+                    <hr>
+                </div>
+
+                <div class="modal-body" id="results-body">
+                    <h2 id="match-name"></h2>
+                    <h2 id="match-email"></h2>
+                    <img id="match-img" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <p>Copyright @Pet PAWtners 2020</p>
+        </div>
+    </footer>
+
+
+    <!-- Jquery  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../assets/javaScript.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--Connect API route to page-->
+    <script type="text/javascript">
+        // Chosen CSS
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    city: $("#city").val(),
+                    state: $("#state").val(),
+                    email: $("#email").val(),
+                    duration: $("#q4").val(),
+                    quantity: $("#q5").val(),
+                    size: $("#q6").val(),
+                    temperament: $("#q7").val(),
+                };
+
+                // AJAX post the data to the owner API.
+                $.post("/api/owner", userData, function (data) {
+                    // Grab the result from the AJAX post to display the list of possible matches.
+                    if (data.length > 0) {
+                        // First create a un ordered list element which we use to display the result in.
+                        const list = HTMLUListElement = document.createElement('ul');
+
+                        //loop through the results
+                        for (let i = 0; i < data.length; i++) {
+
+                            // grab a sitter element by index from the results array
+                            const sitter = data[i];
+                            // creates an "LI" element to put sitter inside
+                            const li = HTMLLIElement = document.createElement('li');
+                            //create the name, email, and image tags to put inside the li for each sitter we get back
+                            li.className = 'result-item';
+                            li.innerHTML = `<h2> Name: </h2>` + `<h3 id="match-name-${i}">${sitter.name}</h3>` + `<h2> Email: </h2>` +
+                                `<h3 id="match-email-${i}">${sitter.email}</h3>` +
+                                `<img id="match-img-${i}" src="${sitter.photo}" alt=""><br /><br /><hr>`;
+                            //insert the list item into the list ul to build the list of sitters to display in the 
+                            //modal
+                            list.insertAdjacentElement('beforeend', li);
+                        }
+                        //Clear out the modal body to get ready for the next list.
+                        let modalBody = HTMLDivElement = $('#results-body')[0];
+                        modalBody.innerHTML = "";
+                        //Add the list of sitters to the modal body
+                        modalBody.insertAdjacentElement('afterbegin', list);
+                        // Show the modal with the best match
+
+                        $('#results-modal').modal('toggle');
+                    } else {
+                        toastr.options = {
+                            "positionClass": "toast-top-center"
+                        }
+                        toastr.warning('Oh dog poop!  There is no one in your area that matches your needs at this time.')
+                    }
+                });
+            } else {
+                toastr.options = {
+                    "positionClass": "toast-top-center"
+                }
+                toastr.error("Please fill out all fields before submitting!");
+            }
+        });
+    </script>
+</body>
+
+</html>

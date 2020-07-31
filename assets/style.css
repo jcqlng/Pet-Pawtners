@@ -1,0 +1,545 @@
+body, html {
+    font-family: 'Cuprum';
+    font-size: 18px;
+    line-height: 34px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth; 
+ 
+}
+
+    h1 {
+    font-size: 55px;
+    font-family: 'Carter One';
+}
+
+    h2 {
+    font-size: 30px;
+    font-family: 'Cuprum';
+}
+
+    h3 {
+    font-size: 20px;
+}
+
+    h4 {
+    font-size: 30px;
+    font-family: 'Carter One';
+    color: rgb(9, 9, 77);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+    h5{
+    font-size: 30px;
+    font-family: 'Carter One';
+    color: rgb(9, 9, 77);
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+    p {
+   color: rgb(9, 9, 77);
+}
+
+/* Header and Nav Bar  */
+    .nav-container {
+    width: auto;
+    max-width: 1140px;
+    margin: 0 auto;
+    clear: both;
+}
+
+    #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    margin: 0 0 30px;
+    padding-left: 15px;
+    overflow: auto;
+    background-color: white;
+}
+
+  #logo {
+    float: left;
+    height: 90px;
+    font-family: 'Carter One';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 90px;
+    color: rgb(9, 9, 77);
+    text-align: center;
+    text-decoration: none;
+}
+
+    #logo:hover {
+    color:rgb(110, 108, 107)
+}
+
+    nav {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+  
+    nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: rgb(9, 9, 77);
+    text-decoration: none;
+    font-family: 'Cuprum'; 
+    font-size: 16px;  
+}
+
+    a {
+    color: rgb(9, 9, 77);
+}
+
+    a:hover {
+    color: rgb(110, 108, 107)
+}
+
+/* Hero Image & Text */
+
+/* Intro  */          
+    .container-intro {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 15px;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+}
+
+    .intro{
+    padding-top: 40px;
+}
+
+    .hero-image {
+    background-image: linear-gradient(rgba(245, 241, 241, 0.5), rgba(250, 248, 248, 0.5)), url("./images/hero-image.jpg") ;
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden;
+} 
+
+/* Place text in the middle of the image */
+    .hero-text {
+    text-align: center;
+    position: absolute; 
+    top: 10%;
+    color: rgb(9, 9, 77);
+    min-width: 60%;
+} 
+
+/* Buttons  */
+    .intro-buttons {
+    padding-top: 50px;
+}
+
+    .btn {
+    background-color: rgb(9, 9, 77);
+    color: white;
+    font-family: 'Cuprum';
+}
+
+    .btn:hover {
+    background-color:rgb(110, 108, 107);
+    border: 0px none;
+    color: white;
+}
+
+/* About  */
+    .container-about {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+    padding-left: 45px;
+    padding-right: 45px; 
+}
+
+    #about-data {
+    background-color:#f1f1f1f1
+}
+
+    #about-text {
+    margin-left: 20px;
+    padding-top: 15px;   
+}
+
+    .paw {
+    max-width: 30%;
+    max-height: 30%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Team/Pack  */
+    .container-pack {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+    .pack {
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px; 
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+    #team-text {
+    width: 100%; 
+    display: flex;
+    justify-content: center;     
+}
+
+/* Survey  */
+    .hero-image-survey {
+    background-image: linear-gradient(rgba(245, 241, 241, 0.5), rgba(250, 248, 248, 0.5)), url("../assets/images/owner-survey.jpg") ;
+    min-height: 40%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    margin: auto;
+    object-fit: cover;
+    overflow: hidden;  
+} 
+
+    .survey {
+    background-color: rgb(9, 9, 77);
+    min-width: 70%;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    .survey-box {
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;    
+    padding-bottom: 50px; 
+}
+
+    #paw-prints {
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;  
+}
+
+    .form-control {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+/* Contact  */
+    .container-contact {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+    #contact-image {
+    max-width:20%;
+    max-height: 20%;
+}
+
+/* Testimonails  */
+
+/* Slideshow container */
+    .slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+  
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+  
+  /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+    .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+    .prev:hover, .next:hover {
+    background-color:#ddd;
+    color: white;
+}
+  
+    .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+  
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+    .active, .dot:hover {
+    background-color: rgb(9, 9, 77);
+}
+  
+    q {
+    font-style: italic;
+}
+  
+    .author {
+    color: rgb(9, 9, 77);
+}
+
+/* Footer  */
+footer {
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    max-height: 50px; 
+    text-align: center;
+    color: rgb(9, 9, 77);
+    font-family: 'Antic Didone';
+    font-size: 10px;
+    margin-bottom: 0;
+    clear: both;
+} 
+
+/* Survey Pages Results */
+
+/* Results Modal  */
+    .result-item {
+    list-style: none;
+}
+
+    .result-item > img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+    #modal-title {
+    width: 100%;
+    padding-left: 15px;
+}
+
+    .modal-about {
+    padding-left: 40px;
+    padding-right: 25px;
+    padding-top: 10px
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 980px){
+
+    h2 {
+    font-size: 25px;
+}
+
+    h5  {
+    text-align: center;
+}
+
+    img {
+   width: 100%;
+}
+    /* Hamburger Nav  */
+    .topnav {
+    overflow: auto;
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+  /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks{
+    display: none;
+}
+  
+  /* Style navigation menu links */
+    .topnav a {
+    color: rgb(9, 9, 77);
+    font-family: 'Cuprum'; 
+    font-size: 16px;
+    padding: 10px 16px;
+    display: block;
+    background-color: white;
+}
+  
+  /* Style the hamburger menu */
+    .topnav a.icon {
+    background-color: white;
+    color: rgb(110, 108, 107);
+    padding-top: 20px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+    .topnav a:hover {
+    background-color: #efefef;
+    color: white;
+}
+  
+  /* Style the active link (or home/logo) */
+    .active {
+    background-color: white;
+    color: white;
+} 
+
+  /* Header and Nav Bar  */
+    #masthead {
+    display: none;
+}
+
+    #logo {
+    width: 100%;
+    text-align: left;     
+    background-color: #efefef;  
+}
+   
+    #logo.active {
+    padding-top: 5px;
+}
+
+/* Homepage  */
+
+    .hero-text {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+    .paw {
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
+}
+
+    .container-pack {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+    .container-contact {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+    .btn {
+    margin-bottom: 25px; 
+}
+
+    .container-about {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+    #about-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+    #team-text {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Survey Pages  */
+    .hero-image-survey {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+    height: 80%
+}
+
+    .survey {
+    width: 100%;
+}
+
+    .survey-box {
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+}
